@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<variablen>
+<isitrom>
+<DATA>true</DATA>
+</isitrom>
+<modname>
+<DATA>Project INFINITUM</DATA>
+</modname>
+<modversion>
+<DATA>Update 1</DATA>
+</modversion>
+<device>
+<DATA>galaxysl</DATA>
+</device>
+<builtdate>
+<DATA>20.20.20</DATA>
+</builtdate>
+</variablen>
