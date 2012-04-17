@@ -6,10 +6,13 @@ import android.app.Activity;
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity 
 {
@@ -69,10 +72,37 @@ public class MainActivity extends Activity
     
     private class SendClick implements OnClickListener
     {    	       
+    	boolean b ;
+    	ProgressDialog pDialog;
+    	Handler handler;
 		@Override
 		public void onClick(View v) 
 		{
-//			new SendFussData(MainActivity.this,xmlData).execute(Constants.SERVER_URL);					
+			pDialog = new ProgressDialog(MainActivity.this);
+			pDialog.setMessage("Sending data to server...");
+			pDialog.setIndeterminate(true);
+			pDialog.show();
+			handler = new Handler(){
+	        	@Override
+	        	public void handleMessage(Message msg) 
+	        	{	        	
+	        		pDialog.dismiss();
+	        		if(b)	        
+	    	        	Toast.makeText(MainActivity.this, "Successfully submitted stats", Toast.LENGTH_SHORT).show();
+	    	        else
+	    	        	Toast.makeText(MainActivity.this, "Internet Connection Problem", Toast.LENGTH_SHORT).show();
+	        	}
+	        };
+			Thread thread = new Thread() {
+	            @Override
+	            public void run() {
+	        		WebRequest wr = new WebRequest(Constants.SERVER_URL);
+	        		b = wr.postData(MainActivity.this, xmlData);
+	        		handler.sendMessage(handler.obtainMessage());
+	            }
+	        };	        
+	        
+	        thread.start();	        
 		}
     }    	
 }
