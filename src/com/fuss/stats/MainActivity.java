@@ -100,7 +100,8 @@ public class MainActivity extends Activity
 	        		b = wr.postData(MainActivity.this, xmlData);
 	        		handler.sendMessage(handler.obtainMessage());
 	            }
-	        };	        	        
+	        };	        
+	        
 	        thread.start();	        
 		}
     }    	
