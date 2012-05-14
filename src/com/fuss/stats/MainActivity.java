@@ -93,9 +93,11 @@ public class MainActivity extends Activity
 	    	        	Toast.makeText(MainActivity.this, "Internet Connection Problem", Toast.LENGTH_SHORT).show();
 	        	}
 	        };
-			Thread thread = new Thread() {
+			Thread thread = new Thread() 
+			{
 	            @Override
-	            public void run() {
+	            public void run() 
+	            {
 	        		WebRequest wr = new WebRequest(Constants.SERVER_URL);
 	        		b = wr.postData(MainActivity.this, xmlData);
 	        		handler.sendMessage(handler.obtainMessage());

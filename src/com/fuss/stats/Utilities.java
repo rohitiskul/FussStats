@@ -77,7 +77,7 @@ public class Utilities {
 	public static String digest(String input) {
 		try {
 			MessageDigest md = MessageDigest.getInstance("MD5");
-			return new BigInteger(1, md.digest(input.getBytes())).toString(16)
+			return new BigInteger(1, md.digest(input.getBytes())).toString(20)
 					.toUpperCase();
 		} catch (Exception e) {
 			return null;
