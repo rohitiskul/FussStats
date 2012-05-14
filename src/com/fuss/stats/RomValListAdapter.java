@@ -47,7 +47,7 @@ public class RomValListAdapter extends BaseAdapter
 		holder.headingTv = (TextView)convertView.findViewById(R.id.headingTv);
 		holder.valueTv = (TextView)convertView.findViewById(R.id.valueTv);
 		
-		holder.headingTv.setText(fussArray.get(position).getHeader());
+		holder.headingTv.setText(fussArray.get(position).getKey());
 		holder.valueTv.setText(fussArray.get(position).getValue());
 		
 		return convertView;

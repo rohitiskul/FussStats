@@ -54,7 +54,7 @@ public class MainActivity extends Activity
 		@Override
 		protected Void doInBackground(String... params) 
 		{
-			romValuesArray = new FileHandler().readFile();
+			romValuesArray = new FileHandler().readFile(MainActivity.this);
 			return null;			
 		}
 		@Override

@@ -2,7 +2,7 @@ package com.fuss.stats;
 
 public class RomData 
 {
-	private String header = null;
+	private String key = null;
 	private String value = null;
 	private String xmlHeader = null;
 	
@@ -12,11 +12,11 @@ public class RomData
 	public void setXmlHeader(String xmlHeader) {
 		this.xmlHeader = xmlHeader;
 	}
-	public String getHeader() {
-		return header;
+	public String getKey() {
+		return key;
 	}
-	public void setHeader(String header) {
-		this.header = header;
+	public void setKey(String key) {
+		this.key = key;
 	}
 	public String getValue() {
 		return value;
