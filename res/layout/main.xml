@@ -1,24 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
-    
-    <ListView
-        android:id="@+id/unique_values_list"
-        android:layout_width="match_parent"
-        android:layout_height="0dip"
-        android:layout_margin="10dp"
-        android:layout_weight="0.85" 
-        android:cacheColorHint="#0000">
+    android:layout_margin="10dp">
+        <CheckBox 
+            android:text="@string/optin" 
+            android:id="@+id/main_optin"
+            android:layout_height="wrap_content" 
+            android:layout_width="fill_parent"
+            android:layout_margin="5dip"/>
 
-    </ListView>
-    
-    <Button
-        android:id="@+id/send_btn"
-        android:layout_width="match_parent"
-        android:layout_height="0dip"
-        android:layout_weight="0.14"
-        android:text="@string/send_btn" />
+        <TextView
+            android:id="@+id/thankutext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/official_ics_blue"
+            android:textSize="16sp"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider"/>
+        <Button
+            android:id="@+id/previewBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/preview"
+            android:background="@drawable/btn_bg"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider"/>
+
+        <Button
+            android:id="@+id/viewstatsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/viewstats" 
+            android:background="@drawable/btn_bg"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider"/>
 </LinearLayout>

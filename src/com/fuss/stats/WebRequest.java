@@ -16,6 +16,7 @@ import org.apache.http.message.BasicNameValuePair;
 
 import android.content.Context;
 import android.util.Log;
+import android.widget.Toast;
 
 public class WebRequest 
 {	
@@ -54,17 +55,16 @@ public class WebRequest
 			{
 				sb.append(str);
 				sb.append("\r\n");
-			}
-			
-			Log.d("POST", sb.toString());
+			}			
 			inputStream.close();
 			Log.i("POSTDATA", "Successfully returned true");
+			Toast.makeText(c, c.getResources().getString(R.string.sending), Toast.LENGTH_SHORT).show();
 			return true;
 		}	
 	
 		catch (Exception e)
 		{			
-			Log.d("POSTDATA", "error:"+e.toString());
+			Log.e("POSTDATA", "error:"+e.toString());
 			return false;
 		}             
 	}

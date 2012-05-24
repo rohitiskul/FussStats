@@ -8,7 +8,9 @@ import android.content.Context;
 import android.os.SystemProperties;
 import android.telephony.TelephonyManager;
 
-public class Utilities {
+public class Utilities 
+{
+	
 	public static String getUniqueID(Context ctx) {
 		TelephonyManager tm = (TelephonyManager) ctx
 				.getSystemService(Context.TELEPHONY_SERVICE);

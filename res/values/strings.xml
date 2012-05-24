@@ -5,4 +5,12 @@
     <string name="app_name">FussStats</string>
     <string name="send_btn">Send</string>
 	<string name="link">http://www.team-blockbuster.com/stats/index.php</string>
+	<string name="notification_ticker">Stats Opted-In</string>
+	<string name="notification_desc">Enable or Disable Anonymous Statistics</string>
+	<string name="notification_title">Fuss132 Statistics</string>
+	<string name="optin">Enable reporting</string>
+	<string name="thxoptin">Thank you for opting-in</string>
+	<string name="sending">Sending …</string>
+	<string name="preview">Preview data</string>
+	<string name="viewstats">View stats</string>
 </resources>

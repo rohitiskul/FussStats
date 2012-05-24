@@ -21,6 +21,14 @@ public class Constants
 	//Data will be send to .
 	public static final String SERVER_URL = "http://www.team-blockbuster.com/stats/index.php";
 
+	//For Reporting Service
+	public static final String PREF_NAME = "stats_prefs";
+	public static final String CHECKED_IN = "checkedin";
+	public static final String OPT_IN = "optin";
+	public static final String FIRST_BOOT = "firstboot";
+    public static final String TAG = "FussStats";
+	
+	
 	//only for test not used in actual code.
 	public static final String TEST =
 			"<variablen>" +
