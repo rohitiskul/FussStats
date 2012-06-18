@@ -9,14 +9,12 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
 public class PreviewActivity extends Activity 
 {
 
 	private ListView previewListview = null;
-	private SimpleAdapter adapter = null;
 	private ArrayList<RomData> romValuesArray = null;
 	
     @Override

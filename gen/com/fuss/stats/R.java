@@ -10,14 +10,45 @@ package com.fuss.stats;
 public final class R {
     public static final class attr {
     }
+    public static final class color {
+        public static final int black=0x7f040003;
+        public static final int darkgray=0x7f040005;
+        public static final int light_gray=0x7f040001;
+        public static final int official_ics_blue=0x7f040000;
+        public static final int transparent=0x7f040004;
+        public static final int white=0x7f040002;
+    }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int btn_bg=0x7f020000;
+        public static final int divider=0x7f020001;
+        public static final int ic_launcher=0x7f020002;
+    }
+    public static final class id {
+        public static final int headingTv=0x7f060000;
+        public static final int main_optin=0x7f060002;
+        public static final int previewBtn=0x7f060004;
+        public static final int previewList=0x7f060006;
+        public static final int thankutext=0x7f060003;
+        public static final int valueTv=0x7f060001;
+        public static final int viewstatsBtn=0x7f060005;
     }
     public static final class layout {
-        public static final int main=0x7f030000;
+        public static final int fuss_list_item=0x7f030000;
+        public static final int main=0x7f030001;
+        public static final int preview=0x7f030002;
     }
     public static final class string {
-        public static final int app_name=0x7f040001;
-        public static final int hello=0x7f040000;
+        public static final int app_name=0x7f050001;
+        public static final int hello=0x7f050000;
+        public static final int link=0x7f050003;
+        public static final int notification_desc=0x7f050005;
+        public static final int notification_ticker=0x7f050004;
+        public static final int notification_title=0x7f050006;
+        public static final int optin=0x7f050007;
+        public static final int preview=0x7f05000a;
+        public static final int send_btn=0x7f050002;
+        public static final int sending=0x7f050009;
+        public static final int thxoptin=0x7f050008;
+        public static final int viewstats=0x7f05000b;
     }
 }

@@ -43,7 +43,6 @@ dalvik.vm.heapsize=64m
 #
 # FUSS ONLY PROPERTIES
 #
-ro.fuss132.isitrom=true
 ro.fuss132.modname=fussrom
 ro.fuss132.modversion=fussrom_alpha1
 ro.fuss132.device=galaxysl
